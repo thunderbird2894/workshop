@@ -1,0 +1,151 @@
+.contenedor{
+	max-width: 800px;
+	margin: auto;
+	padding: 40px 0;
+	text-align: center;
+}
+
+nav .contenedor{
+	padding: 15px 0;
+	overflow: auto;
+}
+
+.logo, .menu, .titulo{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-weight: bold;
+}
+
+.logo{
+	float: left;
+}
+
+.menu{
+	float: right;
+	font-size: 10px;
+}
+
+nav{
+	background-color: #273d51;
+}
+
+header, .about{
+	background-color: #00c19e;
+}
+
+.ion-android-star{
+	display: inline-block;
+}
+
+.star-black{
+	color: black;
+}
+
+.star-white{
+	color: white;
+}
+
+.star-white:before, .star-white:after{
+	background-color: white;
+	display: inline-block;
+	height: 2px;
+	width: 50px;
+	content: "";
+	font-size: 30px;
+}
+
+p{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.portfolio img{
+	max-width: 30%;
+}
+
+.portfolio .titulo, .portfolio .ion-android-star, .contact 	.titulo{
+	color: black;
+	font-weight: bold;
+}
+
+.star-black:before, .star-black:after{
+	background-color: black;
+	display: inline-block;
+	height: 2px;
+	width: 50px;
+	content: "";
+	font-size: 30px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.boton-transparente{
+	border: 1px solid white;
+	display: inline-block;	
+	border-radius: 6px;
+	padding: 5px;
+}
+
+.link{
+	display: inline-block;
+}
+
+form input{
+	display: block;
+	width: 100%;
+	margin: auto;
+	border: 0;
+	border-top: 1px solid #f0f0f0;
+}
+
+form .message{
+	border-bottom: 1px solid #f0f0f0;
+}
+
+form .send{
+	display: inline-block;
+	background-color: #00c19e;
+	color: white;
+	max-width: 50px;
+	padding: 5px;
+	border-radius: 6px;
+}
+
+.form{
+	position: center;
+	text-align: left;
+	width: 65%;
+	margin: auto;
+}
+
+footer{
+	background-color: #273d51;
+}
+
+.copyright{
+	background-color: #203041;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.iconos{
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+	width: 15px;
+	height: 15px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+.bootstrap-link{
+	color: #00ba9c;
+}
