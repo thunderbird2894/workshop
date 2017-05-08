@@ -6,11 +6,11 @@
 }
 
 nav .contenedor{
-	padding: 15px 0;
+	padding: 25px 0;
 	overflow: auto;
 }
 
-.logo, .menu, .titulo{
+.logo, .menu, .titulo, h1{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
@@ -26,6 +26,21 @@ nav .contenedor{
 	font-size: 10px;
 }
 
+.menu li {
+	padding: 0 7px;
+}
+
+header img {
+	width: 150px;
+	height: 150px;
+	margin-top: 5px;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 15px;
+}
+
 nav{
 	background-color: #273d51;
 }
@@ -36,6 +51,9 @@ header, .about{
 
 .ion-android-star{
 	display: inline-block;
+	font-size: 25px;
+	margin: 6px;
+	margin-bottom: 15px;
 }
 
 .star-black{
@@ -49,19 +67,34 @@ header, .about{
 .star-white:before, .star-white:after{
 	background-color: white;
 	display: inline-block;
-	height: 2px;
+	height: 4px;
 	width: 50px;
 	content: "";
 	font-size: 30px;
+	margin-bottom: 7px;
+}
+
+.titulo {
+	font-size: 23px;
 }
 
 p{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+
+}
+
+header p {
+	font-size: 14px;
 }
 
 .portfolio img{
 	max-width: 30%;
+	padding: 8px;
+}
+
+.portfolio img:hover {
+
 }
 
 .portfolio .titulo, .portfolio .ion-android-star, .contact 	.titulo{
@@ -72,10 +105,11 @@ p{
 .star-black:before, .star-black:after{
 	background-color: black;
 	display: inline-block;
-	height: 2px;
+	height: 4px;
 	width: 50px;
 	content: "";
 	font-size: 30px;
+	margin-bottom: 7px;
 }
 
 a{
@@ -83,27 +117,46 @@ a{
 	text-decoration: none;
 }
 
+.about .flex {
+	display: flex;
+	justify-content: center;
+}
+
+.about .flex p {
+	max-width: 35%;
+	text-align: left;
+	font-size: 14px;
+	padding: 0 10px;
+	line-height: 140%;
+}
+
 .boton-transparente{
 	border: 1px solid white;
 	display: inline-block;	
 	border-radius: 6px;
-	padding: 5px;
+	padding: 8px;
+	margin: 15px;
 }
 
 .link{
 	display: inline-block;
 }
 
-form input{
+form input, textarea{
 	display: block;
 	width: 100%;
 	margin: auto;
 	border: 0;
 	border-top: 1px solid #f0f0f0;
+	font-family: 'Montserrat', sans-serif;
+	height: 40px;
 }
 
 form .message{
 	border-bottom: 1px solid #f0f0f0;
+	height: 80px;
+	padding-top: 12px;
+	font-size: 11px;
 }
 
 form .send{
@@ -113,6 +166,8 @@ form .send{
 	max-width: 50px;
 	padding: 5px;
 	border-radius: 6px;
+	height: 30px;
+	margin-top: 8px;
 }
 
 .form{
@@ -126,20 +181,43 @@ footer{
 	background-color: #273d51;
 }
 
+footer .contenedor {
+	display: flex;
+}
+
+footer .contenedor article {
+	flex: 1;
+}
+
+footer .contenedor article h3 {
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+footer .contenedor article p {
+	font-size: 12px;
+	width: 70%;
+	margin: auto;
+}
+
 .copyright{
 	background-color: #203041;
 	text-align: center;
 	margin: 0;
 	padding: 10px 0;
+	font-size: 10px;
 }
 
 .iconos{
 	color: white;
 	border: 1px solid white;
 	border-radius: 50%;
-	padding: 5px;
-	width: 15px;
-	height: 15px;
+	padding: 10px 12px;
+	font-size: 20px;
+}
+
+.facebook {
+	padding: 10px 16px;
 }
 
 ul li{
@@ -149,3 +227,4 @@ ul li{
 .bootstrap-link{
 	color: #00ba9c;
 }
+
