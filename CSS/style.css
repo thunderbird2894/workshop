@@ -5,12 +5,22 @@
 	text-align: center;
 }
 
+.minimenu {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 8px;
+	font-size: 10px;
+	margin-right: 10px;
+	float: right;
+	display: none;
+}
+
 nav .contenedor{
 	padding: 25px 0;
 	overflow: auto;
 }
 
-.logo, .menu, .titulo, h1{
+.logo, .menu, .titulo, h1, .minimenu{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
@@ -19,6 +29,7 @@ nav .contenedor{
 
 .logo{
 	float: left;
+	margin-left: 15px;
 }
 
 .menu{
@@ -150,13 +161,13 @@ form input, textarea{
 	border-top: 1px solid #f0f0f0;
 	font-family: 'Montserrat', sans-serif;
 	height: 40px;
+	font-size: 12px;
 }
 
 form .message{
 	border-bottom: 1px solid #f0f0f0;
 	height: 80px;
 	padding-top: 12px;
-	font-size: 11px;
 }
 
 form .send{
@@ -228,3 +239,55 @@ ul li{
 	color: #00ba9c;
 }
 
+@media screen and (max-width: 320px) {
+	.logo {
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+	header .contenedor {
+		padding: 10px;
+	}
+	.menu {
+		display: none;
+	}
+	.minimenu {
+		display: inline-block;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	.star-black:before, .star-black:after, .star-white:before, .star-white:after {
+		width: 100px;
+	}
+
+	.portfolio .imagenes {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.portfolio .imagenes img {
+		max-width: 100%;
+	}
+
+	.about .flex {
+		flex-direction: column;
+	}
+
+	.about .flex p {
+		max-width: 100%;
+		margin-top: 10px;
+	}
+
+	.contact .form {
+		width: 90%;
+	}
+
+	footer .contenedor {
+		flex-direction: column;
+	}
+
+	footer .contenedor article {
+		margin-bottom: 25px;
+	}
+}
